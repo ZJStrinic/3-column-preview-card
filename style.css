@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+ --bright-orange:hsl(31, 77%, 52%);
+ --dark-cyan:hsl(184, 100%, 22%);
+ --very-dark-cyan:hsl(179, 100%, 13%);
+
+ --paragraphs:hsla(0, 0%, 100%, 0.75);
+ --very-light-gray:hsl(0, 0%, 95%);
+ /*(background, headings, buttons)*/
+
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.attribution { 
+ font-size: 11px; 
+ text-align: center; 
+ color: orange;
+}
+.attribution a {
+  color: hsl(240, 68%, 45%); 
+}
+body {
+  color: var(--paragraphs);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-light-gray);
+}
+
+
+.container {
+  margin: 5rem;
+
+}
+.container h1 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive, sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+.container p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.70rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container button {
+  border-radius: 2rem;
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+}
+
+.container .sedans {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.container .sedans img {
+  max-height: 100%;
+  height: 1.75rem;
+  margin-top: 1rem;
+}
+.container .sedans h1 {
+  padding: 1rem 0;
+}
+.container .sedans button {
+  color: var(--bright-orange);
+  margin: 1rem 0rem;
+}
+.container .sedans button:hover{
+  background-color: var(--bright-orange);
+  border-color: white ;
+  color: white;
+  cursor: pointer;
+}
+
+.container .suvs {
+  background-color: var(--dark-cyan);
+  padding: 1rem 1.5rem;
+}
+.container .suvs img {
+  max-height: 100%;
+  height: 1.75rem;
+  margin-top: 1rem;
+}
+.container .suvs h1 {
+  padding: 1rem 0;
+}
+.container .suvs button {
+  color: var(--dark-cyan);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.container .suvs button:hover{
+  background-color: var(--dark-cyan);
+  border-color: white ;
+  color: white;
+  cursor: pointer;
+}
+.container .luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.container .luxury img {
+  max-height: 100%;
+  height: 1.75rem;
+  margin-top: 1rem;
+}
+.container .luxury h1 {
+  padding: 1rem 0;
+}
+.container .luxury button {
+  color: var(--very-dark-cyan);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.container .luxury button:hover{
+  background-color: var(--very-dark-cyan);
+  border-color: white ;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    min-width: 40rem;
+    padding: 0;
+  }
+  .container .sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  p {
+    margin-bottom: 5rem;
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
+    
+  }
+  .container .sedans button {
+    color: var(--bright-orange);
+    margin-top: 0.5rem;
+  }
+  
+  .container .suvs {
+    background-color: var(--dark-cyan);
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .container .suvs button {
+    color: var(--dark-cyan);
+    margin-top: 0.5rem;
+  }
+  
+  .container .luxury {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .container .luxury button {
+    color: var(--very-dark-cyan);
+    margin-top: 0.5rem;
+  }
+
+
+}
